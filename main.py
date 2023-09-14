@@ -12,7 +12,7 @@
 import requests
 
 API_URL = "https://api-inference.huggingface.co/models/Salesforce/blip-image-captioning-base"
-headers = {"Authorization": "Bearer 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"}
+headers = {"Authorization": "Bearer {API_TOKEN}"}
 
 def query(filename):
     with open(filename, "rb") as f:
